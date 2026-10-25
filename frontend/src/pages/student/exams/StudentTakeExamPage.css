@@ -1,0 +1,235 @@
+
+.take-exam-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  color: #172033;
+}
+
+.take-exam-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.take-exam-header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.take-exam-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.take-exam-timer {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 16px 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.take-exam-timer span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.take-exam-timer strong {
+  font-size: 22px;
+  font-variant-numeric: tabular-nums;
+}
+
+.take-exam-content {
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.take-exam-status {
+  color: #64748b;
+  text-align: center;
+  padding: 40px 12px;
+}
+
+.take-exam-progress {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.take-exam-question {
+  padding: 24px 0;
+  border-top: 1px solid #e2e8f0;
+}
+
+.take-exam-question h2 {
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+.take-exam-options {
+  display: grid;
+  gap: 12px;
+}
+
+.take-exam-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.take-exam-option:hover {
+  border-color: #94a3b8;
+}
+
+.take-exam-option.selected {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.take-exam-option input {
+  accent-color: #2563eb;
+  flex-shrink: 0;
+}
+
+.take-exam-option-number {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  font-size: 13px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.take-exam-saving {
+  margin: 10px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.take-exam-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding-top: 24px;
+  margin-top: 12px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.take-exam-footer p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.take-exam-page button,
+.take-exam-result button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.take-exam-page button:hover,
+.take-exam-result button:hover {
+  background: #1d4ed8;
+}
+
+.take-exam-page button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.take-exam-message {
+  padding: 12px 14px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.take-exam-message.error,
+.take-exam-error {
+  color: #b91c1c;
+  background: #fef2f2;
+}
+
+.take-exam-result {
+  max-width: 520px;
+  margin: 48px auto;
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #fff;
+  text-align: center;
+}
+
+.take-exam-result h1 {
+  margin-top: 0;
+}
+
+.take-exam-result > p {
+  color: #64748b;
+}
+
+.take-exam-score {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 28px 0;
+}
+
+.take-exam-score span {
+  color: #64748b;
+}
+
+.take-exam-score strong {
+  font-size: 32px;
+}
+
+@media (max-width: 600px) {
+  .take-exam-page {
+    padding: 24px 14px;
+  }
+
+  .take-exam-header {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .take-exam-content {
+    padding: 16px;
+  }
+
+  .take-exam-footer {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .take-exam-footer button {
+    width: 100%;
+  }
+}

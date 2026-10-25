@@ -1,0 +1,244 @@
+
+.teacher-questions-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #172033;
+}
+
+.teacher-questions-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.teacher-questions-heading h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.teacher-questions-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.teacher-questions-back {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.teacher-questions-back:hover {
+  text-decoration: underline;
+}
+
+.teacher-questions-panel {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 4%);
+}
+
+.teacher-questions-panel > h3,
+.teacher-questions-list-heading h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.teacher-question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 22px;
+}
+
+.teacher-question-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.teacher-question-field > span {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.teacher-question-field input,
+.teacher-question-field select,
+.teacher-question-field textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 11px 12px;
+  color: #172033;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.teacher-question-field textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.teacher-question-field input:focus,
+.teacher-question-field select:focus,
+.teacher-question-field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 12%);
+}
+
+.teacher-question-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.teacher-question-options h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.teacher-question-form button {
+  align-self: flex-start;
+  padding: 11px 20px;
+  color: #ffffff;
+  background: #2563eb;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.teacher-question-form button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.teacher-question-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.teacher-question-message {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.teacher-question-message.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+.teacher-question-message.success {
+  color: #166534;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.teacher-questions-list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.teacher-questions-list-heading > span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.teacher-questions-empty {
+  margin: 0;
+  padding: 24px 12px;
+  color: #64748b;
+  text-align: center;
+  font-size: 14px;
+}
+
+.teacher-question-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.teacher-question-card {
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.teacher-question-card-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.teacher-question-card-heading h4 {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+
+.teacher-question-card-heading > span {
+  flex-shrink: 0;
+  padding: 5px 9px;
+  color: #1d4ed8;
+  background: #eff6ff;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.teacher-question-exam,
+.teacher-question-correct {
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.teacher-question-correct {
+  color: #15803d;
+}
+
+@media (max-width: 640px) {
+  .teacher-questions-heading h2 {
+    font-size: 24px;
+  }
+
+  .teacher-questions-panel {
+    padding: 18px;
+  }
+
+  .teacher-question-options {
+    padding: 14px;
+  }
+
+  .teacher-question-card-heading {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

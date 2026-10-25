@@ -1,0 +1,161 @@
+
+.student-classes-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #172033;
+}
+
+.student-classes-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.student-classes-heading h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.student-classes-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.student-classes-back {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.student-classes-back:hover {
+  text-decoration: underline;
+}
+
+.student-classes-panel {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 4%);
+}
+
+.student-classes-list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.student-classes-list-heading h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.student-classes-list-heading > span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.student-classes-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.student-class-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 22px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+}
+
+.student-class-card:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 6px 18px rgb(15 23 42 / 5%);
+  transform: translateY(-2px);
+}
+
+.student-class-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: #2563eb;
+  background: #eff6ff;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.student-class-card h3 {
+  margin: 18px 0 10px;
+  font-size: 17px;
+  overflow-wrap: anywhere;
+}
+
+.student-class-card p {
+  margin: 0 0 18px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.student-class-card a {
+  margin-top: auto;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.student-class-card a:hover {
+  text-decoration: underline;
+}
+
+.student-classes-empty {
+  margin: 0;
+  padding: 30px 12px;
+  color: #64748b;
+  text-align: center;
+  font-size: 14px;
+}
+
+.student-classes-message {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.student-classes-message.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+@media (max-width: 700px) {
+  .student-classes-heading h2 {
+    font-size: 24px;
+  }
+
+  .student-classes-panel {
+    padding: 18px;
+  }
+
+  .student-classes-grid {
+    grid-template-columns: 1fr;
+  }
+}

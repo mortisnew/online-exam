@@ -1,0 +1,188 @@
+
+.school-details {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #172033;
+}
+
+.school-details .dashboard-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.school-details .dashboard-heading h2 {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.school-details .dashboard-heading p {
+  margin: 0;
+  color: #64748b;
+}
+
+.school-details a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.school-details a:hover {
+  text-decoration: underline;
+}
+
+.school-details article {
+  padding: 24px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 4%);
+}
+
+.school-details article h3 {
+  margin: 0 0 18px;
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.school-details article p {
+  margin: 12px 0;
+  line-height: 1.6;
+  color: #475569;
+  overflow-wrap: anywhere;
+}
+
+.school-details article strong {
+  color: #172033;
+}
+
+.school-details article img {
+  display: block;
+  margin-top: 12px;
+  padding: 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f8fafc;
+}
+
+.school-details article ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.school-details article li {
+  padding: 10px 0;
+  color: #475569;
+  overflow-wrap: anywhere;
+}
+
+.school-details article form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.school-details article label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.school-details article input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 520px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.school-details article input::placeholder {
+  color: #94a3b8;
+}
+
+.school-details article input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 13%);
+}
+
+.school-details article input:disabled {
+  background: #f1f5f9;
+  cursor: not-allowed;
+}
+
+.school-details article button {
+  min-height: 42px;
+  margin-top: 6px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.15s;
+}
+
+.school-details article button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.school-details article button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.school-details article button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.school-details [role="status"],
+.school-details [role="alert"] {
+  padding: 11px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.school-details [role="status"] {
+  background: #f0fdf4;
+  color: #166534;
+  border: 1px solid #bbf7d0;
+}
+
+.school-details [role="alert"] {
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+@media (max-width: 640px) {
+  .school-details {
+    gap: 16px;
+  }
+
+  .school-details .dashboard-heading h2 {
+    font-size: 22px;
+  }
+
+  .school-details article {
+    padding: 18px;
+    border-radius: 12px;
+  }
+
+  .school-details article button {
+    width: 100%;
+  }
+}

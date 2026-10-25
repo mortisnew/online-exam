@@ -1,0 +1,265 @@
+.teacher-exams-page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  color: #172033;
+}
+
+.teacher-exams-heading,
+.teacher-exams-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.teacher-exams-heading h2,
+.teacher-exams-section-heading h3 {
+  margin: 0;
+  color: #172033;
+}
+
+.teacher-exams-heading h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.teacher-exams-heading p,
+.teacher-exams-section-heading p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.teacher-exams-back {
+  padding: 10px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  background: #fff;
+  color: #334155;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.teacher-exams-back:hover {
+  background: #f8fafc;
+}
+
+.teacher-exams-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 4%);
+}
+
+.teacher-exams-section-heading h3 {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.teacher-create-exam-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr) minmax(0, 0.8fr) auto;
+  align-items: end;
+  gap: 16px;
+}
+
+.teacher-exam-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.teacher-exam-field label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.teacher-exam-field input,
+.teacher-exam-field select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 43px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.teacher-exam-field input:focus,
+.teacher-exam-field select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 10%);
+}
+
+.teacher-create-exam-form button {
+  min-height: 43px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.teacher-create-exam-form button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.teacher-create-exam-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.teacher-exams-count {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.teacher-exams-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.teacher-exam-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.teacher-exam-card:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 5px 16px rgb(15 23 42 / 5%);
+}
+
+.teacher-exam-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.teacher-exam-card h3 {
+  margin: 16px 0 8px;
+  overflow-wrap: anywhere;
+  color: #172033;
+  font-size: 16px;
+}
+
+.teacher-exam-card p {
+  margin: 0 0 14px;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.teacher-exam-duration {
+  margin-top: auto;
+  padding: 6px 10px;
+  border-radius: 7px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.teacher-exams-message {
+  margin: 0;
+  padding: 18px;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.teacher-exams-success,
+.teacher-exams-error {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.teacher-exams-success {
+  color: #15803d;
+}
+
+.teacher-exams-error {
+  color: #dc2626;
+}
+
+@media (max-width: 1100px) {
+  .teacher-create-exam-form {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .teacher-create-exam-form button {
+    grid-column: 1 / -1;
+  }
+
+  .teacher-exams-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .teacher-exams-page {
+    gap: 22px;
+  }
+
+  .teacher-exams-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .teacher-exams-heading h2 {
+    font-size: 23px;
+  }
+
+  .teacher-exams-panel {
+    padding: 18px;
+  }
+
+  .teacher-create-exam-form,
+  .teacher-exams-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .teacher-create-exam-form button {
+    grid-column: auto;
+  }
+}

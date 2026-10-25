@@ -1,0 +1,135 @@
+
+.student-results-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #172033;
+}
+
+.student-results-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.student-results-heading h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.student-results-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.student-results-back {
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.student-results-back:hover {
+  text-decoration: underline;
+}
+
+.student-results-panel {
+  padding: 24px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 4%);
+}
+
+.student-results-list-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.student-results-list-heading h3 {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.student-results-list-heading > span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.student-results-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.student-results-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+}
+
+.student-results-table th {
+  padding: 14px 16px;
+  color: #64748b;
+  background: #f8fafc;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.student-results-table td {
+  padding: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.student-results-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.student-results-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.student-results-empty {
+  margin: 0;
+  padding: 30px 12px;
+  color: #64748b;
+  text-align: center;
+  font-size: 14px;
+}
+
+.student-results-message {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.student-results-message.error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+}
+
+@media (max-width: 700px) {
+  .student-results-heading h2 {
+    font-size: 24px;
+  }
+
+  .student-results-panel {
+    padding: 18px;
+  }
+
+  .student-results-table th,
+  .student-results-table td {
+    padding: 12px;
+  }
+}

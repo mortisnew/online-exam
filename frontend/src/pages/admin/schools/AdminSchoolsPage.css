@@ -1,0 +1,189 @@
+.admin-schools {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: #172033;
+}
+
+.admin-schools .dashboard-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.admin-schools .dashboard-heading h2 {
+  margin: 0 0 6px;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.admin-schools .dashboard-heading p {
+  margin: 0;
+  color: #64748b;
+}
+
+.admin-schools a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.admin-schools a:hover {
+  text-decoration: underline;
+}
+
+.admin-schools .create-school-card {
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 4%);
+}
+
+.admin-schools .create-school-card h3 {
+  margin: 0 0 18px;
+  font-size: 18px;
+}
+
+.admin-schools form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.admin-schools label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.admin-schools input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 520px;
+  min-height: 44px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  outline: none;
+}
+
+.admin-schools input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgb(59 130 246 / 13%);
+}
+
+.admin-schools button {
+  min-height: 42px;
+  margin-top: 6px;
+  padding: 10px 17px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-schools button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.admin-schools button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-schools .school-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.admin-schools .school-card {
+  padding: 22px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 4%);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.admin-schools .school-card:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 6px 18px rgb(15 23 42 / 7%);
+}
+
+.admin-schools .school-card h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  overflow-wrap: anywhere;
+}
+
+.admin-schools .school-card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.admin-schools .school-card a {
+  display: inline-block;
+  padding: 9px 13px;
+  background: #eff6ff;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.admin-schools .school-card a:hover {
+  background: #dbeafe;
+  text-decoration: none;
+}
+
+.admin-schools [role="status"],
+.admin-schools [role="alert"],
+.admin-schools .page-message {
+  padding: 13px 15px;
+  border-radius: 9px;
+}
+
+.admin-schools [role="status"] {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+.admin-schools [role="alert"] {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #991b1b;
+}
+
+.admin-schools .page-message {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  color: #64748b;
+}
+
+@media (max-width: 640px) {
+  .admin-schools .dashboard-heading h2 {
+    font-size: 22px;
+  }
+
+  .admin-schools .create-school-card {
+    padding: 18px;
+  }
+
+  .admin-schools .school-list {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-schools button {
+    width: 100%;
+  }
+}

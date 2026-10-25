@@ -1,0 +1,248 @@
+.teacher-classes-page {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  color: #172033;
+}
+
+.teacher-classes-heading,
+.teacher-classes-section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.teacher-classes-heading h2,
+.teacher-classes-section-heading h3 {
+  margin: 0;
+  color: #172033;
+}
+
+.teacher-classes-heading h2 {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.teacher-classes-heading p,
+.teacher-classes-section-heading p {
+  margin: 8px 0 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.teacher-classes-back {
+  padding: 10px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 9px;
+  background: #fff;
+  color: #334155;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.teacher-classes-back:hover {
+  background: #f8fafc;
+}
+
+.teacher-classes-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 3px 12px rgb(15 23 42 / 4%);
+}
+
+.teacher-classes-section-heading h3 {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.teacher-create-class-form {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 16px;
+}
+
+.teacher-class-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.teacher-class-field label {
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.teacher-class-field input,
+.teacher-class-field select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 43px;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.teacher-class-field input:focus,
+.teacher-class-field select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 10%);
+}
+
+.teacher-create-class-form button {
+  min-height: 43px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 9px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.teacher-create-class-form button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+.teacher-create-class-form button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.teacher-classes-count {
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.teacher-classes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.teacher-class-card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.teacher-class-card:hover {
+  border-color: #bfdbfe;
+  box-shadow: 0 5px 16px rgb(15 23 42 / 5%);
+}
+
+.teacher-class-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #eff6ff;
+  color: #2563eb;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.teacher-class-card h3 {
+  margin: 16px 0 8px;
+  overflow-wrap: anywhere;
+  color: #172033;
+  font-size: 16px;
+}
+
+.teacher-class-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.teacher-classes-message {
+  margin: 0;
+  padding: 18px;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.teacher-classes-success,
+.teacher-classes-error {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.teacher-classes-success {
+  color: #15803d;
+}
+
+.teacher-classes-error {
+  color: #dc2626;
+}
+
+@media (max-width: 900px) {
+  .teacher-create-class-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .teacher-create-class-form button {
+    grid-column: 1 / -1;
+  }
+
+  .teacher-classes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .teacher-classes-page {
+    gap: 22px;
+  }
+
+  .teacher-classes-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .teacher-classes-heading h2 {
+    font-size: 23px;
+  }
+
+  .teacher-classes-panel {
+    padding: 18px;
+  }
+
+  .teacher-create-class-form,
+  .teacher-classes-grid {
+    grid-template-columns: 1fr;
+  }
+}
